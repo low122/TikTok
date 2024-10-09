@@ -17,7 +17,7 @@ In the current stage findings, the banned author with the claim videos has the h
 
     From previous findings, we know that videos by banned authors tend to have more views, likes, and shares than videos by active and under-review authors. However, this only occurs in claim status, which means the engagement rates are more related to claim_status rather than the author_ban_status.
 
-    - Also, we know that the claimed video has a higher view rate than the opinion video. We see that the mean and median of likes in claim video are overall higher than opinion video, this tells us that users are more likely to receive claim rather than opinion. Users are also willing to comment and share in claim videos as well. 
+    Also, we know that the claimed video has a higher view rate than the opinion video. We see that the mean and median of likes in the claim video are overall higher than in the opinion video. This tells us that users are more likely to receive a claim rather than an opinion. Users are also willing to comment and share in claim videos. 
 
     - Authors have more comments, likes, and shares in opinion videos under review. We can make assumptions:
         - The opinions are controversial but still do not violate the rules.
