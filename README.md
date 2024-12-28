@@ -46,9 +46,9 @@ The analysis reveals that claim videos receive significantly higher engagement c
 [Diagram]
 
 **2. Engagement Patterns by Content Type**
-- `Main Insight 1`: Claim videos have a higher mean and median number of views compared to opinion videos.
+- `Main Insight 1`: The median number of views for claim videos is 501,555, which is significantly higher than the 4,953 median views for opinion videos. 
 
-- `Main Insight 2`: Likes, comments, and shares are significantly higher for claim videos, indicating greater user interaction.
+- `Main Insight 2`: The engagement level for claim videos are distributed along the x-axis, showing a larger variability and the presence of outliers, whereas opinion videos are mostly concentrated around the same engagement rate, reflecting a more consistent but lower level of interaction.
 
 - `Main Insight 3`: Engagement levels are strongly correlated with claim status, regardless of the author's verification or ban status.
 
