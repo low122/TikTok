@@ -1,53 +1,65 @@
-# Tiktok
-**Introduction**
---
-Build ML model to classify video content as a claim or opinion to enhance the moderating process and reduce the backlog of user reports. 
-
-**Findings**
---
-- There are 19382 total, with 50% of claims - 9608.
-- Engagement level strongly correlates with claim status, but we need to get more information.
-- The overall authors' status with the claim video has a higher engagement level than those with the opinion video. In the claimed video, the banned author has significantly higher engagement than the active author.
-
-In the current stage findings, the banned author with the claim videos has the highest engagement level. 
-
-**Key Statistical Findings**
+**TikTok Video Content Classification**
 --
 
-1. Difference in Video View Counts Between Verified and Unverified Accounts
+Welcome to the TikTok Video Content Classification project! This repository contains the analysis and machine learning model development aimed at classifying TikTok video content as either a claim or an opinion. The goal is to enhance the moderation process and reduce the backlog of user reports by automating content classification.
 
-- Conducted a t-test to compare mean video views between verified and unverified accounts.
+**Project Background**
+-
 
-- Result: 
+TikTok is a leading social media platform in the short-form video industry, operating since 2016 with a business model centered around user-generated content and advertising revenue. The primary objective is to improve content moderation efficiency to maintain community standards and enhance user experience.
 
-The p-value was less than the significance level of 5%, leading to the rejection of the null hypothesis.
+**Key Business Metrics:**
+-
 
-- Conclusion: 
+- Total Videos Analyzed: 19,382
 
-There is a statistically significant difference in the mean video views between verified and unverified accounts, with unverified accounts having higher engagement on average.
+- Engagement Metrics: Views, Likes, Comments, Shares, Downloads
 
-2. Engagement Level by Claim Status
+- Author Status: Verified, Unverified, Banned, Active, Under Review
 
-- Engagement level strongly correlates with claim status. Claim videos generally have higher engagement than opinion videos.
+**Data Structure and Initial Checks**
+-
 
-- Observation: 
+This dataset only contains one table, and the discription of this table is as follow:
 
-Banned authors' claim videos have significantly higher engagement compared to those from active authors.
 
-3. Claim vs. Opinion Videos
+[EDR diagram]
 
-- Claim videos tend to have more views, likes, and shares than opinion videos. The median and mean for likes are also higher for claim videos, suggesting users are more inclined to interact with claim-based content.
 
-**Question**
---
-1. How do the claims and opinion video data compare or differ? Consider views, comments, likes, and shares.
+**Executive Summary**
+-
 
-    From previous findings, we know that videos by banned authors tend to have more views, likes, and shares than videos by active and under-review authors. However, this only occurs in claim status, which means the engagement rates are more related to claim_status rather than the author_ban_status.
+**Overview of Findings**
 
-    - Also, we know that the claimed video has a higher view rate than the opinion video. We see that the mean and median of likes in claim video are overall higher than opinion video, this tells us that users are more likely to receive claim rather than opinion. Users are also willing to comment and share in claim videos as well. 
+The analysis reveals that claim videos receive significantly higher engagement compared to opinion videos, with unverified accounts generating more views on average than verified accounts. Additionally, videos from banned authors exhibit exceptionally high engagement levels, particularly within the claim category. These insights suggest that engagement metrics are more closely related to the content type (claim vs. opinion) rather than the author's verification or ban status.
 
-    - Authors have more comments, likes, and shares in opinion videos under review. We can make assumptions:
-        - The opinions are controversial but still do not violate the rules.
+**Insights Deep Dive**
+-
 
-2. Are there statistical differences between verified and unverified accounts in terms of the mean video view counts?
-- After conducting the t-test, the p-value is less than the significance level of 5%, leading to the rejection of the null hypothesis. This brings us to the statistically significant difference in the mean video views between verified and unverified accounts on TikTok.
+**1. Classification Accuracy**
+- `Main Insight 1`: The model successfully classifies video with an accuracy of ~99%, effectively distinguishing between claims and opnions.
+
+- `Main Insight 2`: The model achieved a precision of 100% and a recall of nearly 100% for claim videos, meaning all videos predicted as claims are actual claims, with almost all true claims correctly identified.
+
+- `Main Insight 3`: The engagement metrics are solely related to the claim status of a video, instead of the author's status. 
+
+[Diagram]
+
+**2. Engagement Patterns by Content Type**
+- `Main Insight 1`: Claim videos have a higher mean and median number of views compared to opinion videos.
+
+- `Main Insight 2`: Likes, comments, and shares are significantly higher for claim videos, indicating greater user interaction.
+
+- `Main Insight 3`: Engagement levels are strongly correlated with claim status, regardless of the author's verification or ban status.
+
+- `Main Insight 4`: Opinion videos under review receive more comments, likes, and shares, suggesting that while they are engaging, they do not violate community guidelines.
+
+**3. Author Status Impact on Engagement**
+
+- `Main Insight 1`: Banned authors' claim videos have the highest engagement levels, surpassing those of active and under-review authors.
+
+- `Main Insight 2`: Verified accounts generally receive more consistent engagement, but unverified accounts outperform them in view counts.
+
+- `Main Insight 3`: The discrepancy in engagement between banned and active authors highlights potential issues with content that leads to bans.
+
+- `Main Insight 4`: Engagement patterns suggest that users are more drawn to content from banned authors, possibly due to controversial or high-impact content.
