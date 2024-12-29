@@ -31,7 +31,7 @@ This dataset only contains one table, and the discription of this table is as fo
 
 **Overview of Findings**
 
-The analysis reveals that claim videos receive significantly higher engagement compared to opinion videos, with unverified accounts generating more views on average than verified accounts. Additionally, videos from banned authors exhibit exceptionally high engagement levels, particularly within the claim category. These insights suggest that engagement metrics are more closely related to the content type (claim vs. opinion) rather than the author's verification or ban status.
+The analysis reveals that claim videos receive significantly higher engagement compared to opinion videos, with unverified accounts generating more views on average than verified accounts. Additionally, the sum of videos from active authors exhibit exceptionally high engagement levels, particularly within the claim category. These insights suggest that engagement metrics are more closely related to the content type (claim vs. opinion) rather than the author's verification or ban status.
 
 **Insights Deep Dive**
 -
@@ -56,7 +56,7 @@ The analysis reveals that claim videos receive significantly higher engagement c
 
 **3. Author Status Impact on Engagement**
 
-- `Main Insight 1`: Banned authors' claim videos have the highest engagement levels, surpassing those of active and under-review authors.
+- `Main Insight 1`: The average of banned authors' claim videos have the highest engagement levels, surpassing those of active and under-review authors.
 
 - `Main Insight 2`: Verified accounts generally receive more consistent engagement, but unverified accounts outperform them in view counts.
 
