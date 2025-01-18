@@ -43,7 +43,6 @@ The analysis reveals that claim videos receive significantly higher engagement c
 
 - `Main Insight 3`: The engagement metrics are solely related to the claim status of a video, instead of the author's status. 
 
-[Diagram]
 
 **2. Engagement Patterns by Content Type**
 - `Main Insight 1`: The median number of views for claim videos is 501,555, which is significantly higher than the 4,953 median views for opinion videos. 
