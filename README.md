@@ -23,7 +23,7 @@ TikTok is a leading social media platform in the short-form video industry, oper
 This dataset only contains one table, and the discription of this table is as follow:
 
 
-[EDR diagram]
+![Final table](tiktok_table.png)
 
 
 **Executive Summary**
